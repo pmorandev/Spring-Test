@@ -1,4 +1,4 @@
-package com.pmoran.spring.test;
+package com.pmoran.spring.torre;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
