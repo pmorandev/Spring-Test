@@ -1,2 +1,3 @@
 INSERT INTO TASK (NAME, STATUS) VALUES ('Create project', 3);
-INSERT INTO TASK (NAME, STATUS) VALUES ('Create dependencies', 1);
+INSERT INTO TASK (NAME, STATUS) VALUES ('Create dependencies', 2);
+INSERT INTO TASK (NAME, STATUS) VALUES ('Create tasks', 1);
