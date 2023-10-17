@@ -1,15 +1,14 @@
 package com.pmoran.spring.torre.controller;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
+import com.pmoran.spring.torre.api.ApplicationAPI;
+import com.pmoran.spring.torre.model.TestDTO;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.pmoran.spring.torre.api.ApplicationAPI;
-import com.pmoran.spring.torre.model.TestDTO;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 @RestController
 public class ApplicationController implements ApplicationAPI {
@@ -23,7 +22,6 @@ public class ApplicationController implements ApplicationAPI {
         testMessage.setDate(dateFormat.format(date));
         return new ResponseEntity<TestDTO>(testMessage, HttpStatus.OK);
     }
-    
-    
+
 
 }

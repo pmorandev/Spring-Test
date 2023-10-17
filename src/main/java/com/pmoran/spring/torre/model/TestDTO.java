@@ -8,7 +8,7 @@ public class TestDTO implements BaseDTO {
 
     @JsonProperty("date")
     private String date;
-    
+
     public void setMessage(String message) {
         this.message = message;
     }

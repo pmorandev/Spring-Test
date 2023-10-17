@@ -3,7 +3,7 @@ package com.pmoran.spring.torre.model;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class ErrorMessageDTO implements BaseDTO {
-    
+
     @JsonProperty("status")
     private int status;
 
@@ -12,6 +12,15 @@ public class ErrorMessageDTO implements BaseDTO {
 
     @JsonProperty("date")
     private String date;
+
+    public ErrorMessageDTO(int status, String issue, String date) {
+        this.status = status;
+        this.issue = issue;
+        this.date = date;
+    }
+
+    public ErrorMessageDTO() {
+    }
 
     public void setStatus(int status) {
         this.status = status;
@@ -28,7 +37,7 @@ public class ErrorMessageDTO implements BaseDTO {
     public int getStatus() {
         return status;
     }
-    
+
     public String getIssue() {
         return issue;
     }
